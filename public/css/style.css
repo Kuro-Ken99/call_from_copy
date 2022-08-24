@@ -1,0 +1,442 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+/* 全体 */
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+h1 {
+    padding: 48px 0;
+}
+
+input {
+    padding: 0;
+    box-sizing: border-box;
+    height: 24px;
+}
+
+textarea {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+select {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #3e3e3b;
+    color: #ebeced;
+    user-select: none;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.7;
+    transition: opacity .3s;
+}
+
+a {
+    text-decoration: none;
+    user-select: none;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.error {
+    color: red;
+}
+
+/* ヘッダー */
+header {
+    background-color: #4c586f;
+    padding: 16px 0;
+}
+
+.header_contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_contents a {
+    color: #ebeced;
+}
+
+.logo {
+    display: block;
+    font-size: 32px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.header_contents nav a {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.header_contents nav button {
+    background-color: #4c586f;
+    color: #ebeced;
+    font-size: 16px;
+}
+
+/* メイン */
+main {
+    background-color: #ebeced;
+    color: #3e3e3b;
+    min-height: 100vh;
+}
+
+main a {
+    color: #3e3e3b;
+    font-weight: bold;
+}
+
+/* 伝言フォーム */
+.message_form {
+    width: 80%;
+    margin: 0 auto 48px;
+}
+
+.message_form label,
+.message_form select,
+.message_form input,
+.message_form textarea,
+.message_form p,
+.message_form small {
+    display: block;
+    width: 70%;
+    margin: 0 auto 4px;
+}
+
+.message_form select {
+    height: 24px;
+}
+
+.message_form textarea {
+    height: 48px;
+}
+
+.message_form p,
+.message_form small {
+    font-size: 12px;
+}
+
+.message_form button {
+    display: block;
+    margin: 32px auto 8px;
+    border-radius: 8px;
+}
+
+.message_form > p {
+    text-align: center;
+    font-size: 16px;
+    color: #df6e21;
+}
+
+/* 検索フォーム */
+.search form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.search input,
+.search button {
+    display: block;
+    height: 24px;
+}
+
+.search input {
+    width: 100%;
+    padding: 0;
+    margin: 8px 0;
+}
+
+.search button {
+    width: 15%;
+    margin: 0 0 0 auto;
+    border-radius: 4px;
+}
+
+.search p {
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+/* 伝言一覧 */
+.calls {
+    margin-top: 104px;
+    padding-bottom: 16px;
+}
+
+.calls h2 {
+    margin-bottom: 16px;
+}
+
+.calls div {
+    width: 50%;
+    margin: 0 auto 16px;
+    border: 3px double #3e3e3b;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.calls div p {
+    margin-bottom: 8px;
+    border-bottom: #3e3e3b 1px dashed;
+}
+
+.calls button {
+    display: block;
+    margin: 0 0 0 auto;
+    border-radius: 4px;
+}
+
+/* プロフィール */
+.profile {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.profile p {
+    border-bottom: #3e3e3b 1px dashed;
+    margin-bottom: 8px;
+}
+
+.profile a {
+    display: block;
+    width: 20%;
+    margin: 0 0 16px auto;
+}
+
+.profile form {
+    width: 70%;
+    margin: 0 0 16px auto;
+}
+
+.profile input {
+    width: 80%;
+}
+
+.profile button {
+    width: 15%;
+    border-radius: 4px;
+}
+
+.profile small {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.update_complete {
+    color: #df6e21;
+}
+
+/* アカウント削除 */
+.account_delete {
+    width: 50%;
+    margin: 120px auto 0;
+}
+
+.account_delete h2 {
+    margin-bottom: 56px;
+}
+
+.account_delete form {
+    width: 70%;
+    margin: 0 0 16px auto;
+}
+
+.account_delete input {
+    width: 80%;
+    margin-bottom: 32px;
+}
+
+.account_delete button {
+    width: 15%;
+    border-radius: 4px;
+}
+
+.account_delete small {
+    display: block;
+}
+
+/* プロフィール変更フォーム */
+.profile_update {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.profile_update label,
+.profile_update input,
+.profile_update small,
+.profile_update button {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.profile_update button {
+    margin-top: 16px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+/* ログイン・新規登録フォーム */
+.user_form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.user_form form {
+    margin-bottom: 32px;
+}
+
+.user_form label,
+.user_form input,
+.user_form small,
+.user_form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.user_form button {
+    margin-top: 16px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.user_form p {
+    font-size: 12px;
+}
+
+/* 検索結果 */
+.result form {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.result input {
+    width: 20%;
+}
+
+.result button {
+    border-radius: 4px;
+}
+
+.result table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.result p {
+    text-align: center;
+}
+
+/* 仮登録画面 */
+.register_messages {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+.register_messages span {
+    font-weight: bold;
+}
+
+.register_messages p {
+    margin-bottom: 8px;
+}
+
+/* パスワードリセット画面 */
+.pass_reset {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+.sent_announce {
+    color: #df6e21;
+}
+
+.pass_reset p,
+.pass_reset form {
+    margin-bottom: 8px;
+}
+
+.pass_reset input {
+    width: 40%;
+}
+
+.pass_input {
+    padding-top: 64px;
+}
+
+.pass_input form {
+    margin-top: 32px;
+}
+
+.pass_input p,
+.pass_input label,
+.pass_input input,
+.pass_input button,
+.pass_input small {
+    display: block;
+    width: 50%;
+    margin: 0 auto 8px;
+}
+
+.pass_input button {
+    margin-top: 24px;
+    border-radius: 8px;
+    height: 24px;
+}
+
+/* フッター */
+footer {
+    background-color:#a2aab0;
+    height: 40px;
+}
+
+footer p {
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: #ebeced;
+}
+
+
+
+/* ボタンについて */
+/* 幅、背景色、文字色は各所で指定　hover, opacity, pointer, border-radiusなどはまとめて指定 */
+/* border radiusも、ピクセル指定にする以上はまとめられないな、、、 */
